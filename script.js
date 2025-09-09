@@ -1,10 +1,13 @@
-// Smooth scroll effect for navigation links
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        document.getElementById(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Form Validation with JavaScript
+    function validateForm() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let message = document.getElementById("message").value;
+
+      if (name === "" || email === "" || message === "") {
+        alert("All fields are required!");
+        return false;
+      }
+      alert("Message Sent Successfully!");
+      return true;
+    }
